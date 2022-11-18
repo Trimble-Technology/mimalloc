@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{225d161a-2030-44b2-8010-a7bcedc6b051}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\static.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\mimalloc-atomic.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\mimalloc-internal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\mimalloc-new-delete.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\mimalloc-override.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\mimalloc-track.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\mimalloc-types.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\mimalloc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\src\bitmap.h" />
+  </ItemGroup>
+</Project>

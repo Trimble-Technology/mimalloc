@@ -8,3 +8,6 @@ out/
 docs/
 *.zip
 .vs
+Build
+mimalloc.Static.VS2019
+Tests/mimalloc.Tests.VS2019
