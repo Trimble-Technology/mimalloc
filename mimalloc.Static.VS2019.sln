@@ -19,6 +19,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nugetter", "Nugetter", "{A9424B5A-0E2E-4622-A3F4-10F8567D6131}"
+	ProjectSection(SolutionItems) = preProject
+		NuGetter\BuildLocalNuget.bat = NuGetter\BuildLocalNuget.bat
+		NuGetter\mimalloc-trimble.nuspec = NuGetter\mimalloc-trimble.nuspec
+		NuGetter\ver.txt = NuGetter\ver.txt
+		NuGetter\mimalloc-trimble.targets = NuGetter\mimalloc-trimble.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -40,6 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{057275EE-599B-4941-95C2-4E3B9CA72A4F} = {E6603237-83D2-4255-BD8B-DEE6AA53F738}
 		{FD90E527-372E-434B-AE18-E1587ED3C7EF} = {E6603237-83D2-4255-BD8B-DEE6AA53F738}
+		{A9424B5A-0E2E-4622-A3F4-10F8567D6131} = {1E626BC0-A249-4235-8872-59E2FAD41A03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BAF108E5-8F88-4072-A897-D02101EF9DEC}
